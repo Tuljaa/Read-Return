@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+import axios from "axios";
 import './App.css';
+import React, { useState, useEffect } from 'react';
+import MyNav from './components/MyNav'
+import MyCarousel from "./components/MyCarousel";
+import Categories from "./components/Categories";
+import BestProduct from './components/BestProducts'
+
+
+import LandingPage from "./components/LandingPage";
+
+import { Routes,Route} from 'react-router-dom';
+
+import AddToCart from "./components/AddToCart";
 
 function App() {
-  return (
+
+  return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <MyNav/>
+      <Routes>
+      <Route exact path="/" element={<LandingPage/>} />
+      <Route  path="/addtocart" element={<AddToCart/>} /> 
+      </Routes>
+
     </div>
-  );
+  )
+
 }
 
-export default App;
+ export default App;
+
+
+
