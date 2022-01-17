@@ -1,6 +1,6 @@
 .App {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
   background-color: #072227;
 }
 .MyNav {
@@ -25,17 +25,32 @@
 }
 
 .BestProduct {
-  width: 100%;
+  /* width: 100%; */
   margin-top: 3%; 
   display: inline-flex;
+  
 }
 
 .Link {
   text-decoration: none;
-  color: black;
+  color: #4FBDBA;
+  
+}
+.Link :hover .Button{
+  background-color: #35858B;
+  color: #072227;
 }
 
 .Button {
   background-color: transparent;
   border: none;
+}
+
+.Img {
+   width: 20%;
+}
+
+.CardBody {
+  background-color: #072227;
+  color: #4FBDBA;
 }

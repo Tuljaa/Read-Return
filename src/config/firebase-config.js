@@ -3,13 +3,14 @@ import firebase from 'firebase'
 // import * as firebase from "firebase";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDT9dYRLI46vVW6jFSp62akNmA3Rd99xGs",
-    authDomain: "read-and-return.firebaseapp.com",
-    projectId: "read-and-return",
-    storageBucket: "read-and-return.appspot.com",
-    messagingSenderId: "633778168334",
-    appId: "1:633778168334:web:20f20ede1245ea10f1d25f",
-    measurementId: "G-277R2SQJTQ"
+  apiKey: "AIzaSyDcRf_8dor87ueTyyt6yFWs7bo3uyB67DY",
+  authDomain: "read-return.firebaseapp.com",
+  databaseURL: "https://read-return-default-rtdb.firebaseio.com/",
+  projectId: "read-return",
+  storageBucket: "read-return.appspot.com",
+  messagingSenderId: "135841190686",
+  appId: "1:135841190686:web:d36bd75a0c9ff68611ef0f",
+  measurementId: "G-QJLM14YVYR"
   };
   
   // Initialize Firebase
